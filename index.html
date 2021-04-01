@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+
+        <h1 id="title">Customer Satisfaction Survey</h1>
+        <p id="description">This survey help us improve our service and it should take less than 5 minutes of your time. When you're done, please click Submit and we will send to your email a discount coupon for your next purchase. Thank you! </p>
+        
+        <form id="survey-form">
+            <label id="name-label">Enter your name here</labe>
+            <input type="text" name="name" id="name" placeholder="Carlos Stevenson" required>
+            <br>
+            <label id="email-label">Enter your e-mail here</label>
+            <input type="email" name="email" id="email" placeholder="carlosstevenson@survey.com" required>
+            <br>
+            <label id="number-label">How old are you?</label>
+            <input type="number" name="age" id="number" min="18" max="99" placeholder="Age" required>
+            <br>
+            <p id="1disatisfied">1= Very disatisfied</p>
+            <p id="2disatisfied">2= Somewhat disatisfied</p>
+            <p id="neutral">3= Neutral</p>
+            <p id="4satisfied">4= Somewhat satisfied</p>
+            <p id="5satisfied">5= Very satisfied</p>
+            <br>
+
+            <label id="dropdown-label"><h4>How satisfied are you with the quality of our products?</h4></label>
+            <select id="dropdown" name="dropdown">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <br>
+            <br>
+
+            <h4 id="order">Did you eat at our restaurant or used our take away service?</h4>
+            <input type="radio" name="place" value="restaurant" id="restaurant">
+            <label for="restaurant" name="restaurant">Restaurat</label>
+            <input type="radio" name="place" value="takeaway" id="takeaway">
+            <label for="takeaway" name="takeaway">Take Away</label>
+            <br>
+            <br>
+
+            <h4 id="data">How did you hear about us?</h4>
+            <label><input type="checkbox" name="data" value="friend">A friend recommended the restaurant</label><br>
+            <label><input type="checkbox" name="data" value="social">Social Media</label><br>
+            <label><input type="checkbox" name="data" value="publicity">TV Publicity</label><br>
+            <label><input type="checkbox" name="data" value="ads">Street Ads</label><br>
+            <br>
+            <div id="comment"><h4>If you want, you can leave a comment below:</h4></div>
+            <textarea id="textarea" name="textarea" rows="10" cols="50"></textarea>
+
+            <br>
+        <button id="submit">Submit</button>
+        </form>
+    </body>
+</html>
