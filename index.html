@@ -46,25 +46,29 @@
               <p id="5satisfied">5= Very satisfied</p>
             </div>
   
-              
-             
-              <br>
-              <br>
-  
-              <h4 id="order">Did you eat at our restaurant or used our take away service?</h4>
-              <input type="radio" name="place" value="restaurant" id="restaurant">
-              <label for="restaurant" name="restaurant">Restaurat</label>
-              <input type="radio" name="place" value="takeaway" id="takeaway">
-              <label for="takeaway" name="takeaway">Take Away</label>
-              <br>
-              <br>
-  
-              <h4 id="data">How did you hear about us?</h4>
-              <label><input type="checkbox" name="data" value="friend">A friend recommended the restaurant</label><br>
-              <label><input type="checkbox" name="data" value="social">Social Media</label><br>
-              <label><input type="checkbox" name="data" value="publicity">TV Publicity</label><br>
-              <label><input type="checkbox" name="data" value="ads">Street Ads</label><br>
-              <br>
+        <div class="order-container">
+            <h4 class="order-title" id="order">Did you eat at our restaurant or used our take away service?</h4>
+            <div class="place">
+                <div class="restaurant">
+                    <input type="radio" name="place" value="restaurant" id="restaurant">
+                    <label for="restaurant" name="restaurant">Restaurat</label>
+                </div>
+                <div class="away">
+                    <input type="radio" name="place" value="takeaway" id="takeaway">
+                    <label for="takeaway" name="takeaway">Take Away</label>
+                </div>
+            </div>
+        </div>
+    
+        <div class="check-container">
+            <h4 id="data">How did you hear about us?</h4>
+            <div class="checkbox">
+                <label><input class="check" type="checkbox" name="data" value="friend">A friend recommended the restaurant</label><br>
+                <label><input class="check" type="checkbox" name="data" value="social">Social Media</label><br>
+                <label><input class="check" type="checkbox" name="data" value="publicity">TV Publicity</label><br>
+                <label><input class="check" type="checkbox" name="data" value="ads">Street Ads</label><br>
+            </div>
+        </div>
               <div id="comment"><h4>If you want, you can leave a comment below:</h4></div>
               <textarea id="textarea" name="textarea" rows="10" cols="50"></textarea>
   
